@@ -2,6 +2,17 @@
 
 import Image from 'next/image';
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import type { Metadata } from 'next';
+import { defaultMetadata } from '../utils/metadata';
+
+export const metadata: Metadata = {
+  title: 'Tentang Saya',
+  description: 'Halaman tentang saya.',
+  openGraph: {
+    images: "https://localhost:3000/images/tentangsaya.png",
+        url: "https://localhost:3000/tentangsaya",
+  },
+};
 
 export default function Home() {
   return (

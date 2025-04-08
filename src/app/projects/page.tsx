@@ -1,6 +1,16 @@
 import Image, { StaticImageData } from 'next/image';
 import image1 from '../../../public/images/project1.png';
 import image2 from '../../../public/images/project2.png';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Proyek',
+    description: 'Halaman proyek.',
+    openGraph: {
+        images: "https://localhost:3000/images/project.png",
+        url: "https://localhost:3000/project",
+    },
+};
 
 type ProjectItemProps = {
     name: string;

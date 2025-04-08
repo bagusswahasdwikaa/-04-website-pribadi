@@ -1,4 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Esai',
+    description: 'Halaman esai.',
+    openGraph: {
+        images: "https://localhost:3000/images/esai.png",
+        url: "https://localhost:3000/esai",
+    },
+};
+
 export default function Essays() {
     const articles = [
         {
